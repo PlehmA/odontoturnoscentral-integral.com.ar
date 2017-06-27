@@ -105,7 +105,11 @@ header nav a:hover {
 
 }
 #turnos {
-    background-color: whitesmoke;
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, white, whitesmoke); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, white, whitesmoke); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, white, whitesmoke); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, white, whitesmoke); /* Standard syntax */
 }
 #turnos .box {
     display: inline-block;
@@ -123,7 +127,11 @@ header nav a:hover {
     padding: 10px;
 }
 #faq {
-    background-color: whitesmoke;
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #BABABA, whitesmoke); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #BABABA, whitesmoke); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #BABABA, whitesmoke); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #BABABA, whitesmoke); /* Standard syntax */
     text-align: center;
 }
 #faq h2 {
@@ -132,27 +140,29 @@ header nav a:hover {
     padding: 20px;
     width: 400px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
     }
     #faq textarea {
       margin: 20px 0;
       padding: 20px;
       width: 400px;
+      border-radius: 5px;
     }
     #faq button {
       background-color: #FFF9E4;
       padding: 20px 40px;
       border-color: #FFF9E4;
-      border-radius: 3px;
+      border-radius: 5px;
       color: #F9C3FF;
       font-size: 18px;
       line-height: 1;
       font-weight: bold;
     }
     #faq button:hover {
-        background-color: #FFB258;
-        box-shadow: 4px 3px black;
-        border-color: #FC5F5F;
+        background-color: #FFE8CD;
+        box-shadow: 4px 3px #FFE0E0;
+        border-radius: 5px;
+        
     }
     footer {
       text-align: center;
@@ -195,4 +205,11 @@ header h3 {
 .box img {
     border-radius: 40px;
     height: 75px;
+}
+#buttontop {
+    border: 2px black;
+    border-radius: 10px;
+    /*display: block;*/
+    float: right;
+    position: fixed;
 }
