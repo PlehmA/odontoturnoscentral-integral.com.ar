@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+
+}
+.home-wrapper {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/doctor-home.jpg") no-repeat center top;
+    background-size: cover;
+    color: white;
+}
+header {
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(48, 48, 48, 0.5);
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+header nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px 15px;
+}
+header nav a.active {
+    background: #FFF9E4;
+    border-radius: 3px;
+    color: #6573FF;
+
+}
+header nav a:hover {
+    color: #D8C7FF;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    transition: all .8s;
+}
+#home {
+    text-align: center;
+    padding: 200px 0 150px;
+}
+#home h1 {
+    font-size: 68px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+#home .divider{
+  width: 80px;
+  border-top: 5px solid #FFF9E4;
+  margin: 0 auto;
+}
+#home p {
+    font-size: 24px;
+    margin-top: 40px;
+}
+#home .social {
+    margin-top: 80px;
+}
+#home .social a {
+    color: white;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #9191FA;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    margin-right: 10px;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    transition: all .8s;
+}
+#home .social a:hover {
+    background-color: #D8C7FF;
+}
+#conocenos .box {
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+    padding: 10px;
+}
+#video {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, white, #D3F2FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, white, #D3F2FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, white, #D3F2FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, white, #D3F2FF); /* Standard syntax */
+    text-align: center;
+    padding: 30px 0;
+}
+#video img {
+    height: auto;
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+}
+#turnos {
+    background-color: whitesmoke;
+}
+#turnos .box {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    margin: 1%;
+    background-color: white;
+}
+#turnos .box img {
+    width: 100%;
+    border-radius: 3px;
+}
+#turnos .box p {
+    color: #666;
+    padding: 10px;
+}
+#faq {
+    background-color: whitesmoke;
+    text-align: center;
+}
+#faq h2 {
+}
+#faq input {
+    padding: 20px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    }
+    #faq textarea {
+      margin: 20px 0;
+      padding: 20px;
+      width: 400px;
+    }
+    #faq button {
+      background-color: #FFF9E4;
+      padding: 20px 40px;
+      border-color: #FFF9E4;
+      border-radius: 3px;
+      color: #F9C3FF;
+      font-size: 18px;
+      line-height: 1;
+      font-weight: bold;
+    }
+    #faq button:hover {
+        background-color: #FFB258;
+        box-shadow: 4px 3px black;
+        border-color: #FC5F5F;
+    }
+    footer {
+      text-align: center;
+      padding: 90px 0;
+      font-size: 18px;
+
+    }
+section {
+    padding: 80px 0;
+}
+section h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.imgheader {
+    display: inline-block;
+    float: left;
+    width: 20%;
+    height: 20%;
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+    margin: -40px -15px -30px -15px;
+}
+header h3 {
+    color: #3560FF;
+    margin: 0 0 -35px;
+    padding-top: 10px;
+    text-shadow: 0.5px 0.5px #261C34;
+}
+.imgnombreheader {
+    display: inline-block;
+    float: left;
+    width: 20%;
+    height: 20%;
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+    margin: -40px -15px -30px -15px;
+}
+.box img {
+    border-radius: 40px;
+    height: 75px;
+}
