@@ -121,22 +121,24 @@ header nav a:hover {
 #turnos .box img {
     width: 100%;
     border-radius: 3px;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
 }
 #turnos .box p {
     color: #666;
     padding: 10px;
 }
 #faq {
-    background: white; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, #BABABA, whitesmoke); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #BABABA, whitesmoke); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #BABABA, whitesmoke); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #BABABA, whitesmoke); /* Standard syntax */
-    text-align: center;
+    background-image: url('../Images/pen-1974727_12802.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #E6E6E6;   
 }
 #faq h2 {
+    text-align: left;
+    text-shadow: 2px 1px #D9C0FC;
 }
-#faq input {
+#faq #input {
     padding: 20px;
     width: 400px;
     border: 1px solid #ccc;
@@ -148,9 +150,8 @@ header nav a:hover {
       width: 400px;
       border-radius: 5px;
     }
-    #faq button {
+    #faq #button {
       background-color: #FFF9E4;
-      padding: 20px 40px;
       border-color: #FFF9E4;
       border-radius: 5px;
       color: #F9C3FF;
@@ -158,7 +159,7 @@ header nav a:hover {
       line-height: 1;
       font-weight: bold;
     }
-    #faq button:hover {
+    #faq #button:hover {
         background-color: #FFE8CD;
         box-shadow: 4px 3px #FFE0E0;
         border-radius: 5px;
@@ -205,11 +206,4 @@ header h3 {
 .box img {
     border-radius: 40px;
     height: 75px;
-}
-#buttontop {
-    border: 2px black;
-    border-radius: 10px;
-    /*display: block;*/
-    float: right;
-    position: fixed;
 }
