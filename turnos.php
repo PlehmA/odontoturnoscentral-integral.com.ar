@@ -2,11 +2,8 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/c2a2b83e4d.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="apple-touch-icon" sizes="57x57" href="Images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="Images/apple-icon-60x60.png">
@@ -25,97 +22,119 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="Images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 	<title>Turnos</title>
 </head>
 <body>
+<style>
+* {
+	font-family: font-family: 'Roboto', sans-serif;
+}
+body {
+	background-color: rgba(48, 48, 48, 0.1);
+}
+	th {
+		text-align: center;
+	}
+</style>
 <div class="container">
-<div class="card-img-top">
+<div class="text-center mb-4 mt-4">
 	<h2>Solicitud de Turnos</h2>
-	<img src="Images/logo2.png" alt="" class="img-fluid mx-auto" style="height: 50%; width: 50%;">
+	<img src="Images/logo4.png" alt="" class="img-fluid mx-auto" style="height: 50%; width: 50%;">
 </div>
-<div>
+<div class="text-center text-capitalize text-success mb-3">
 	<h6>Para solicitar turno de atención complete el siguiente formulario y un operador se comunicará a la brevedad.</h6>
 </div>
-<div>
-	<form action="" method="POST">
-		<div>
-			<label for="">Nombre/s y Apellido/s: </label>
-		<input type="text">
-		</div>
-		<div>
-			<label for=""></label>
-		<input type="text">
-		</div>
-		<div>
-			<label for=""></label>
-		<input type="text">
-		</div>
-		<div>
-			<label for=""></label>
-		<input type="text">
-		</div>
-		<div>
-			<label for=""></label>
-		<input type="text">
-		</div>
-		<div>
-			<label for=""></label>
-		<input type="text">
-		</div>
-		<div>
-			<select name="" id="">
-				<option value=""></option>
+<div class="text-center">
+  <form action="envioxturnos.php" method="POST" id="frmcaptcha">
+	<table class="table table-sm">
+	<tr>
+		<td style='border: inset 0pt'><label for="">Nombre/s y Apellido/s: </label></td>
+		<td style='border: inset 0pt'><input type="text" class="form-control" name="nombre" required></td>
+	</tr>
+	<tr>
+		<td style='border: inset 0pt'><label for="">Correo electrónico: </label></td>
+		<td style='border: inset 0pt'><input type="email" class="form-control" name="email" required></td>
+	</tr>
+	<tr>
+		<td style='border: inset 0pt'><label for="">Obra social /Cobertura: </label></td>
+		<td style='border: inset 0pt'><input type="text" class="form-control" name="cobertura" required></td>
+	</tr>
+	<tr>
+		<td style='border: inset 0pt'><label for="">Nro. de afiliado: </label></td>
+		<td style='border: inset 0pt'><input type="number" class="form-control" name="numafiliado" required></td>
+	</tr>
+	<tr>
+		<td style='border: inset 0pt'><label for="">Nro de Documento: </label></td>
+		<td style='border: inset 0pt'><input type="number" placeholder=" Ej: 12845657" class="form-control" name="numdni" required></td>
+	</tr>
+	<tr>
+		<td style='border: inset 0pt'><label for="">Teléfono de contacto: </label></td>
+		<td style='border: inset 0pt'><input type="number" class="form-control" name="telefono" required></td>
+	</tr>
+	<tr>
+		<td style='border: inset 0pt'><label for="">Especialidad: </label></td>
+		<td style='border: inset 0pt'>
+			<select name="especialidad" id="" class="form-control" required>
+				<option value="Seleccione">Seleccione</option>
+				<option value="Odontología General">Odontología General</option>
+				<option value="Conductos / Endodoncia">Conductos / Endodoncia</option>
+				<option value="Prótesis">Prótesis</option>
+				<option value="Odontopediatría">Odontopediatría</option>
+				<option value="Ortodoncia">Ortodoncia</option>
+				<option value="Tratamiento de las encías-Periodoncia">Tratamiento de las encías-Periodoncia</option>
+				<option value="Cirugía / Extracciones">Cirugía / Extracciones</option>
+				<option value="Implantes">Implantes</option>
 			</select>
-		</div>
-		<div>
-			<label for=""></label>
-			<textarea name=""></textarea>
-		</div>
-		
-		<table class="table">
-		<thead>
-			<tr>
-				<th>Seleccione su día y horario disponible para solicitar turno</th>
-				<th>Mañana 8.30 a 12.30 hs</th>
-				<th>Tarde 14 a 20 hs</th>
-			</tr>
-		</thead>
-			<tbody>
-				<tr>
-					<td>Lunes</td>
-					<td><input type="checkbox"></td>
-					<td><input type="checkbox"></td>
-				</tr>
-				<tr>
-					<td>Martes</td>
-					<td><input type="checkbox"></td>
-					<td><input type="checkbox"></td>
-				</tr>
-				<tr>
-					<td>Miercoles</td>
-					<td><input type="checkbox"></td>
-					<td><input type="checkbox"></td>
-				</tr>
-				<tr>
-					<td>Jueves</td>
-					<td><input type="checkbox"></td>
-					<td><input type="checkbox"></td>
-				</tr>
-				<tr>
-					<td>Viernes</td>
-					<td><input type="checkbox"></td>
-					<td><input type="checkbox"></td>
-				</tr>
-			</tbody>
+		</td>
+	</tr>
+	<tr>
+		<td style='border: inset 0pt'><label for="">Complete con sus palabras el tratamiento a realizar:</label></td>
+		<td style='border: inset 0pt'><textarea name="tipotratamiento" id="" cols="40" rows="3" class="form-control"></textarea></td>
+	</tr>
+	<tr>
+		<th style='border: inset 0pt'>Seleccione su día y horario disponible para solicitar turno</th>
+		<th style='border: inset 0pt'>Mañana 8.30 a 12.30 hs</th>
+		<th style='border: inset 0pt'>Tarde 14 a 20 hs</th>
+	</tr>
+	<tr>
+		<td style='border: inset 0pt'>Lunes</td>
+		<td style='border: inset 0pt'><input type="checkbox" name="lunesmaniana" value="Lunes-Mañana 8.30 a 12.30 hs"></td>
+		<td style='border: inset 0pt'><input type="checkbox" name="lunestarde" value="Lunes-Tarde 14 a 20 hs"></td>
+	</tr>
+	<tr>
+		<td style='border: inset 0pt'>Martes</td>
+		<td style='border: inset 0pt'><input type="checkbox" name="martesmaniana" value="Martes-Mañana 8.30 a 12.30 hs"></td>
+		<td style='border: inset 0pt'><input type="checkbox" name="martestarde" value="Martes-Tarde 14 a 20 hs"></td>
+	</tr>
+	<tr>
+		<td style='border: inset 0pt'>Miercoles</td>
+		<td style='border: inset 0pt'><input type="checkbox" name="miermaniana" value="Miercoles-Mañana 8.30 a 12.30 hs"></td>
+		<td style='border: inset 0pt'><input type="checkbox" name="miertarde" value="Miercoles-Tarde 14 a 20 hs"></td>
+	</tr>
+	<tr>
+		<td style='border: inset 0pt'>Jueves</td>
+		<td style='border: inset 0pt'><input type="checkbox" name="juevesmaniana" value="Jueves-Mañana 8.30 a 12.30 hs"></td>
+		<td style='border: inset 0pt'><input type="checkbox" name="juevestarde" value="Jueves-Tarde 14 a 20 hs"></td>
+	</tr>
+	<tr>
+		<td style='border: inset 0pt'>Viernes</td>
+		<td style='border: inset 0pt'><input type="checkbox" name="viernesmaniana" value="Viernes-Mañana 8.30 a 12.30 hs"></td>
+		<td style='border: inset 0pt'><input type="checkbox" name="viernestarde" value="Viernes-Tarde 14 a 20 hs"></td>
+	</tr>
 		</table>
-		<p>Nota: Para cirugía, endodoncia y periodoncia, debe traer ORDEN DE DERIVACION</p>
-
-		<div class="g-recaptcha" data-sitekey="6LdxEicUAAAAANxW4-RuWc-D6p_adeKmbcneTHvR"></div>
-           <div>
-           		<input type="reset">
-           		<input type="submit" name="enviar">
+		<div class="text-muted">
+			<p>Nota: <span class="text-danger">Para cirugía, endodoncia y periodoncia, debe traer ORDEN DE DERIVACION</span></p>
+		</div>
+		<center><div class="g-recaptcha" data-sitekey="6LdxEicUAAAAANxW4-RuWc-D6p_adeKmbcneTHvR"></div></center>
+           <div class="mt-4 mb-2 btn-group">
+           		<input type="reset" class="btn btn-danger">
+           		<input type="submit" name="enviar" class="btn btn-success ml-1">
            </div>
-	</form>
+  </form>
+	<div class="text-center mb-5">
+		<a href="index.php"><button class="btn active">Volver</button></a>
+	</div>
 </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -148,7 +167,7 @@
                $respuesta=msg.success; // Obtenemos el valor de estado de la validación
                if($respuesta) {        // La validación ha sido correcta
                 // Eliminamos del formulario el campo que contiene los parámetros de validación
-                $("#g-recaptcha-response","#frmcaptcha2").remove();
+                $("#g-recaptcha-response","#frmcaptcha").remove();
                } else    {
                   alert('Complete el captcha'); // Mostramos mensaje
                } 

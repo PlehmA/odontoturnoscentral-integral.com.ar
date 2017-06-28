@@ -124,7 +124,7 @@
                $respuesta=msg.success; // Obtenemos el valor de estado de la validación
                if($respuesta) {        // La validación ha sido correcta
                 // Eliminamos del formulario el campo que contiene los parámetros de validación
-                $("#g-recaptcha-response","#frmcaptcha2").remove();
+                $("#g-recaptcha-response","#frmcaptcha").remove();
                } else    {
                   alert('Complete el captcha'); // Mostramos mensaje
                } 
