@@ -41,7 +41,7 @@
             </div>
         </header>
         <section id="home" class="containers">
-            <h1>CENTRAL DE TURNOS</h1>
+            <h1 class="embed-responsive">CENTRAL DE TURNOS</h1>
             <div class="divider">
 
             </div>
@@ -57,15 +57,9 @@
 
     <section id="conocenos" class="container">
         <h2>CONOCENOS</h2>
-        <div class="box">
-            <img src="Images\oaicono.jpg" alt="" />
-            <h3>Odontopraxis S.A.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolores culpa neque, dolor harum ex ratione fugiat id, odio quasi autem perferendis animi obcaecati amet et, quam accusamus dignissimos doloribus!</p>
+        <div>
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, repellendus quia illo iusto veniam totam tenetur explicabo minima voluptate mollitia eaque enim consectetur eveniet neque molestias, libero aliquid reprehenderit dolore!</span><span>Illo mollitia quas, voluptatum quis cumque totam doloribus temporibus amet voluptates ipsam facere dolore fuga optio eligendi! Ad commodi, aut nulla alias deleniti eveniet saepe consequatur, placeat fugiat, hic sit.</span></p>
         </div>
-        <div class="box">
-            <img src="Images/logoamasis.png" alt="" style="background-color: #00A627;" />
-            <h3>Amasis</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam maiores porro, aut. Voluptas, illum, nisi. Voluptate aut deleniti, ipsum ea facere? Velit suscipit consectetur, expedita accusamus quis magnam quisquam ullam!</p>
         </div>
     </section>
     <section id="turnos">
