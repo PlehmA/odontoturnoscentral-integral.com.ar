@@ -188,12 +188,6 @@ section h2 {
     filter: brightness(150%);
     margin: -40px -15px -30px -15px;
 }
-header h3 {
-    color: #3560FF;
-    margin: 0 0 -35px;
-    padding-top: 10px;
-    text-shadow: 0.5px 0.5px #261C34;
-}
 .imgnombreheader {
     display: inline-block;
     float: left;
