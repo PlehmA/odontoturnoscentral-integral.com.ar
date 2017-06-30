@@ -32,7 +32,7 @@
         <header>
             <div class="container">
                 <img src="Images\logo2.png" alt="Logo Central de Turnos" class="imgheader img-responsive float-lg-left" /><div><h3 class="text-primary float-lg-left">Central de Turnos</h3></div><!--img src="Images\name.png" alt="Logo Central de Turnos" class="imgnombreheader"/-->
-                <nav class="mt-0 float-right">
+                <nav class="float-right">
                         <a href="#home" class="active" style="text-decoration: none;">HOME</a>
                         <a href="#conocenos" style="text-decoration: none;">CONOCENOS</a>
                         <a href="#turnos" style="text-decoration: none;">TURNOS</a>
