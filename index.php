@@ -8,30 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="Images/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="Images/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="Images/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="Images/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="Images/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="Images/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="Images/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="Images/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="Images/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="Images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="Images/logo5.png">
     <link rel="manifest" href="Images/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="Images/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada:400,600" rel="stylesheet">
     <title>Central de Turnos</title>
 </head>
 <body>
     <div class="home-wrapper">
-        <header>
+        <header class="fixed-top pb-0">
             <div class="container">
-                <img src="Images\logo2.png" alt="Logo Central de Turnos" class="imgheader img-responsive float-lg-left" /><div><h3 class="text-primary float-lg-left">Central de Turnos</h3></div><!--img src="Images\name.png" alt="Logo Central de Turnos" class="imgnombreheader"/-->
+                <img src="Images\logo4.png" alt="Logo Central de Turnos" class="imgheader img-responsive float-left pt-1 w-25 h-25 pb-2"/><!--div><h3 class="text-primary float-left">Central de Turnos</h3></div><img src="Images\name.png" alt="Logo Central de Turnos" class="imgnombreheader"/-->
                 <nav class="float-right">
                         <a href="#home" class="active" style="text-decoration: none;">HOME</a>
                         <a href="#conocenos" style="text-decoration: none;">CONOCENOS</a>
@@ -55,19 +42,28 @@
     </div>
 
 
-    <section id="conocenos" class="container">
-        <h2>CONOCENOS</h2>
-        <div>
+    <section id="conocenos">
+        <h2>Conózcanos un poco más. </h2>
+        <div class="container">
             <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, repellendus quia illo iusto veniam totam tenetur explicabo minima voluptate mollitia eaque enim consectetur eveniet neque molestias, libero aliquid reprehenderit dolore!</span><span>Illo mollitia quas, voluptatum quis cumque totam doloribus temporibus amet voluptates ipsam facere dolore fuga optio eligendi! Ad commodi, aut nulla alias deleniti eveniet saepe consequatur, placeat fugiat, hic sit.</span></p>
         </div>
         </div>
     </section>
     <section id="turnos">
             <h2>TURNOS</h2>
-            <div class="col-12 mx-auto text-center">
-                <img src="Images/checklist-1622517_640.png" alt="Íconos redondeados" class="w-25 h-25 d-inline">
+        <div class="col-8 row mx-auto">
+            <div class="col-2"></div>
+            <div class="col-4 text-center box">
+                <img src="Images/checklist-1622517_640.png" alt="Íconos redondeados" class="w-50 h-50 mb-3">
                     <h3>Formulario de turnos</h3>
                     <p>Para poder solicitar su turno <a href="turnos.php"><b>ingrese aquí</b></a>.</p>
+            </div>
+            <div class="col-4 text-center box">
+            <i class="ion-social-whatsapp fa-5x text-success"></i>
+                <h3>Whatsapp!</h3>
+                <p>Experimenta nuestra nueva implementación de turnos. <b><i class="fa fa-whatsapp fa-lg text-success"></i>15-6304-2692</b></p>
+            </div>
+        </div>
     </section>
 <section id="faq">
         <h2 class="mb-0 text-center">¿DUDAS?</h2>
@@ -79,7 +75,7 @@
             <div>
                 <textarea rows="10" placeholder="Tu mensaje..." name="texto" required id="input"></textarea>
             </div>
-            <div class="g-recaptcha" data-sitekey="6LdxEicUAAAAANxW4-RuWc-D6p_adeKmbcneTHvR"></div>
+            <div class="g-recaptcha" data-sitekey="6LecqygUAAAAALl4ic8ftZWFH-pMxBKRdAH2deLo"></div>
            <input type="submit" class="btn btn-sm mt-4" id="button" name="enviar">
         </form> 
 </section>

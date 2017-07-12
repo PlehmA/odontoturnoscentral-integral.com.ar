@@ -2,7 +2,7 @@
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Creamos el enlace para solicitar la verificación con la API de Google.
     $params = array();  // Array donde almacenar los parámetros de la petición
-    $params['secret'] = '6LdxEicUAAAAAJTNFfY9eEEGR-7sQBlCw8NNCPzx'; // Clave privada
+    $params['secret'] = '6LecqygUAAAAAK87QE-lUmXHtnOSE0p7GZfQUklX'; // Clave privada
     if (!empty($_POST) && isset($_POST['g-recaptcha-response'])) {
     $params['response'] = urlencode($_POST['g-recaptcha-response']);
     }
