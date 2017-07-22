@@ -16,8 +16,8 @@
 </head>
 <body>
     <div class="home-wrapper">
-        <header class="fixed-top pb-0">
-            <div class="container">
+        <header class="fixed-top">
+            <div class="container mt-2">
                 <img src="Images\logo4.png" alt="Logo Central de Turnos" class="imgheader img-responsive float-left pt-1 w-25 h-25 pb-2"/><!--div><h3 class="text-primary float-left">Central de Turnos</h3></div><img src="Images\name.png" alt="Logo Central de Turnos" class="imgnombreheader"/-->
                 <nav class="float-right">
                         <a href="#home" class="active" style="text-decoration: none;">HOME</a>
@@ -28,7 +28,7 @@
             </div>
         </header>
         <section id="home" class="container">
-            <h1 class="embed-responsive">CENTRAL DE TURNOS</h1>
+            <h1 class="embed-responsive">Central De Turnos</h1>
             <div class="divider">
 
             </div>
@@ -43,14 +43,20 @@
 
 
     <section id="conocenos">
-        <h2>Conózcanos un poco más. </h2>
+        <h2 class="mb-3">Conózcanos un poco más. </h2>
+        <div class="divider mb-3">
+
+            </div>
         <div class="container">
             <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, repellendus quia illo iusto veniam totam tenetur explicabo minima voluptate mollitia eaque enim consectetur eveniet neque molestias, libero aliquid reprehenderit dolore!</span><span>Illo mollitia quas, voluptatum quis cumque totam doloribus temporibus amet voluptates ipsam facere dolore fuga optio eligendi! Ad commodi, aut nulla alias deleniti eveniet saepe consequatur, placeat fugiat, hic sit.</span></p>
         </div>
         </div>
     </section>
     <section id="turnos">
-            <h2>TURNOS</h2>
+            <h2 class="mb-4">Turnos</h2>
+            <div class="divider">
+
+            </div>
         <div class="col-8 row mx-auto">
             <div class="col-2"></div>
             <div class="col-4 text-center box">
@@ -61,14 +67,16 @@
             <div class="col-4 text-center box">
             <i class="ion-social-whatsapp fa-5x text-success"></i>
                 <h3>Whatsapp!</h3>
-                <p>Experimenta nuestra nueva implementación de turnos. <b><i class="fa fa-whatsapp fa-lg text-success"></i>15-6304-2692</b></p>
+                <p>Experimenta nuestra nueva solicitud de turnos. <b><i class="fa fa-whatsapp fa-lg text-success"></i>15-6304-2692</b></p>
             </div>
         </div>
     </section>
 <section id="faq">
-        <h2 class="mb-0 text-center">¿DUDAS?</h2>
-        <p style="font-size: 10px;" class="mb-5 text-center">¡Contactanos!</p>
-        <form action="contact.php" method="POST" class="mt-4 ml-5" id="frmcaptcha">
+        <h2 class="mb-0 text-center">¿Dudas?</h2>
+        <div class="divider mt-4">
+
+            </div>
+        <form action="contact.php" method="POST" class="mt-4 ml-5 formulario" id="frmcaptcha">
             <div>
                 <input type="email" placeholder="Tu email..." name="email" required id="input">
             </div>

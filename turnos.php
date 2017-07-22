@@ -2,32 +2,21 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/c2a2b83e4d.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="Images/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="Images/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="Images/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="Images/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="Images/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="Images/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="Images/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="Images/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="Images/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="Images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="Images/logo5.png">
     <link rel="manifest" href="Images/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="Images/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada:400,600" rel="stylesheet">
 	<title>Turnos</title>
 </head>
 <body>
 <style>
-* {
+ *{
 	font-family: font-family: 'Roboto', sans-serif;
 }
 body {
@@ -42,14 +31,14 @@ body {
 	<h2>Solicitud de Turnos</h2>
 	<img src="Images/logo4.png" alt="" class="img-fluid mx-auto" style="height: 50%; width: 50%;">
 </div>
-<div class="text-center text-capitalize text-success mb-3">
+<div class="text-center text-success mb-3">
 	<h6>Para solicitar turno de atención complete el siguiente formulario y un operador se comunicará a la brevedad.</h6>
 </div>
 <div class="text-center">
   <form action="envioxturnos.php" method="POST" id="frmcaptcha">
 	<table class="table table-sm">
 	<tr>
-		<td style='border: inset 0pt'><label for="">Nombre/s y Apellido/s: </label></td>
+		<td style='border: inset 0pt'><label for="">Apellido/s y Nombre/s: </label></td>
 		<td style='border: inset 0pt'><input type="text" class="form-control" name="nombre" required></td>
 	</tr>
 	<tr>
@@ -126,7 +115,7 @@ body {
 		<div class="text-muted">
 			<p>Nota: <span class="text-danger">Para cirugía, endodoncia y periodoncia, debe traer ORDEN DE DERIVACION</span></p>
 		</div>
-		<center><div class="g-recaptcha" data-sitekey="6LdxEicUAAAAANxW4-RuWc-D6p_adeKmbcneTHvR"></div></center>
+		<center><div class="g-recaptcha" data-sitekey="6LecqygUAAAAALl4ic8ftZWFH-pMxBKRdAH2deLo"></div></center>
            <div class="mt-4 mb-2 btn-group">
            		<input type="reset" class="btn btn-danger">
            		<input type="submit" name="enviar" class="btn btn-success ml-1">
